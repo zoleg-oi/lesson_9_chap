@@ -12,5 +12,8 @@ def all_variants(text):
 a = all_variants('abc')
 
 print(a)
+list_output = []
 for i in a:
-    print(i)
+    list_output.append(i)
+list_output.sort(key=len)
+print(*list_output, sep='\n')
